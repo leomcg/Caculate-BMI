@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculate your Body Mass Index</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Calculate your Body Mass Index:</h1>
+        
+    </header>
+
+    <section>
+        <p id='hw'>
+            What is your height?</br>
+            <input type="number" name="h" id="h">
+            <input type="radio" name="height" id="feet">
+            <label for="feet">Feet</label>
+            <input type="radio" name="height" id="meters" checked>
+            <label for="meters">Meters</label></br>
+        </br>
+            What is your weight?</br>
+            <input type="number" name="w" id="w">
+            <input type="radio" name="weight" id="pounds">
+            <label for="pounds">Pounds</label>
+            <input type="radio" name="weight" id="kilos" checked>
+            <label for="kilos">Kilos</label>
+        </p>
+
+        <p id='gen'>Gender:
+            <input type="radio" name="radgen" id="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" name="radgen" id="female">
+            <label for="female">Female</label>
+        </p>
+        <input type='button' value='Calculate my BMI!' id='button' onclick='bmi()'> </br>
+             
+    </section>
+    <div id='bmi'></div>
+    <section>
+        <img id='img' src="bmi.png" alt="BMI Chart">   
+    </section>
+    <footer>
+        <p>&copy; leomcg</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
